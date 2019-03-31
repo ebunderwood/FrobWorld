@@ -39,4 +39,8 @@ public class Thing {
 	public void setY( int y ) {
 		this.y = y;
 	}
+	
+	public void setMass (int mass ) {
+		this.mass = mass;
+	}
 }

@@ -4,8 +4,9 @@ public class Frob extends Thing implements Constants{
 	byte[] dna = new byte[DNA_LENGTH];
 	
 	// constructor
-	public Frob( int x, int y ) {
+	public Frob( int x, int y, int mass) {
 		super( x, y, 'f' );
+		super.setMass(mass);
 	}
 
 }

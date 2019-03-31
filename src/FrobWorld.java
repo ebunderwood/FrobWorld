@@ -43,7 +43,7 @@ public class FrobWorld implements Constants{
 					randomY = (int )(Math.random() * (WORLD_WIDTH - 1) + 1);
 					
 					if ( frobWorld[randomX][randomY].getType() == 'e') {
-						frobWorld[randomX][randomY] = new Grass ( randomX, randomY );
+						frobWorld[randomX][randomY] = new Grass ( randomX, randomY, GRASS_GENESIS_MASS );
 						randomGrass++;
 					}
 				}
@@ -56,7 +56,7 @@ public class FrobWorld implements Constants{
 							randomY = (int )(Math.random() * (WORLD_WIDTH - 1) + 1);
 							
 							if ( frobWorld[randomX][randomY].getType() == 'e') {
-								frobWorld[randomX][randomY] = new Frob ( randomX, randomY );
+								frobWorld[randomX][randomY] = new Frob ( randomX, randomY, FROB_GENESIS_MASS );
 								randomFrob++;
 							}
 						}
