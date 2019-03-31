@@ -9,7 +9,7 @@ public class Thing {
 	public Thing ( int x, int y, char type ) {
 		this.x = x;
 		this.y = y;
-		this.type = 'e';
+		this.type = type;
 	}
 	
 	// Getters
