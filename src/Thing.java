@@ -40,7 +40,12 @@ public class Thing {
 		this.y = y;
 	}
 	
-	public void setMass (int mass ) {
+	public void setVitals (int mass, int birthMass, int birthPercent, int updatePeriod, int nextUpdate, int massTaxMills ) {
+		this.birthMass = birthMass;
 		this.mass = mass;
+		this.birthPercent = birthPercent;
+		this.updatePeriod = updatePeriod;
+		this.nextUpdate = nextUpdate;
+		this.massTaxMills = massTaxMills;
 	}
 }

@@ -6,7 +6,6 @@ public class Frob extends Thing implements Constants{
 	// constructor
 	public Frob( int x, int y, int mass) {
 		super( x, y, 'f' );
-		super.setMass(mass);
 	}
 
 }

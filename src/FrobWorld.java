@@ -2,7 +2,6 @@
 public class FrobWorld implements Constants{
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		
 		// Initialize World Variables
 		int simulationTime = 0;
