@@ -48,6 +48,19 @@ public class FrobWorld implements Constants{
 					}
 				}
 		
+		// Get some random frobs in there
+				int randomFrob = 0;
+				
+				while ( randomFrob <= INIT_FROBS) {
+							randomX = (int )(Math.random() * (WORLD_HEIGHT - 1) + 1);
+							randomY = (int )(Math.random() * (WORLD_WIDTH - 1) + 1);
+							
+							if ( frobWorld[randomX][randomY].getType() == 'e') {
+								frobWorld[randomX][randomY] = new Frob ( randomX, randomY );
+								randomFrob++;
+							}
+						}
+		
 		// Print out the World
 		for (int row = 0; row < WORLD_HEIGHT; row++) {
 			for ( int col = 0; col < WORLD_WIDTH; col++ ) {

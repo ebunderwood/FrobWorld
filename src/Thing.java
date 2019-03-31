@@ -4,6 +4,12 @@ public class Thing {
 	private int x;
 	private int y;
 	private char type;
+	private int birthMass;
+	private int mass;
+	private int birthPercent;
+	private int updatePeriod;
+	private int nextUpdate;
+	private int massTaxMills;
 	
 	// Constructor
 	public Thing ( int x, int y, char type ) {
